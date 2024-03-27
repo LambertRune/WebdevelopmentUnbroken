@@ -1,0 +1,127 @@
+html {
+    margin: 0 2.5% 0 2.5%;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url('../images/bgsky3.jpg');
+    color: darkblue;
+    display: block;
+    height: 200px;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+}
+
+header>h1 {
+    font-size: 300%;
+    margin: 0;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+header>p {
+    font-size: 240%;
+    margin: 0;
+    font-weight: bold;
+}
+
+header #vliegtuig {
+    float: right;
+    margin: 0 90px 60px 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+#news {
+    float: right;
+    background-color: #dddddd;
+    border: #999999 1px solid;
+    text-align: center;
+    width: 24.8%;
+
+}
+
+#news > h3 {
+    background-color: blue;
+    color: white;
+    font-size: 120%;
+}
+
+#news > p {
+    padding: 0 10px 0 10px;
+}
+
+#main {
+    width:74%;
+
+}
+
+#gallery {
+    background-color: #999999;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+article > div > img {
+    float: left;
+    margin: 20px;
+}
+
+#introduction {
+    padding: 20px 30px 20px 0;
+    overflow: hidden;
+}
+
+.foto {
+    display: inline-block;
+    height: 180px;
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px dashed black;
+    margin: 10px 10px;
+
+}
+.bottom {
+    clear : both;
+    background-color: #666666;
+    color:white;
+}
+
+.block {
+    display:inline-block;
+    margin-left: 120px;
+    margin-bottom:0px;
+    line-height: 2em;
+}
+.block a {
+    color: white;
+}
+.block a:hover {
+    color: red;
+}
+
+.copyright p{
+    text-align:center;
+}
+
+
+
