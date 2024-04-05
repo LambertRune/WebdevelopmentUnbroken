@@ -1,12 +1,12 @@
-const setup = () => {
-    // deze code wordt pas uitgevoerd als de pagina volledig is ingeladen
-    let waarde = document.getElementById("txtOutput");
-    let button = document.getElementById("button");
-    const welkom = ()=> {
-        waarde.innerHTML='Welkom!';
-    }
-    button.addEventListener('click', welkom);
+const setup =()=>{
+    let output = document.getElementById("txtOutput");
+    let button = document.getElementById("knop");
 
+    button.addEventListener("click",knop);
 }
 
-window.addEventListener("load", setup);
+const knop = () =>{
+    let output = document.getElementById("txtOutput");
+    output.innerHTML = "uitgevoerd";
+}
+window.addEventListener("load",setup);

@@ -1,28 +1,37 @@
 const setup = () => {
-	let colorDemo = document.getElementsByClassName("colorDemo")[0]; // Neem de eerste kleurdemo omdat er maar één is
-	let sliders = document.querySelectorAll(".slider"); // Alle sliders selecteren
+	let sliders = document.getElementsByClassName("slider");
 
+
+	sliders[0].addEventListener("change", update);
+	sliders[0].addEventListener("input", update);
 	
-	sliders.forEach(slider => {
-		slider.addEventListener("input", update); // Verandering in sliderwaarde
-		slider.addEventListener("change", update); // Sliderwaarde gewijzigd
-	});
+	sliders[1].addEventListener("change", update);
+	sliders[1].addEventListener("input",update);
+
+	sliders[2].addEventListener("change", update);
+	sliders[2].addEventListener("input",update);
+	update()
+	
+	
+	
 }
 
 const update = () => {
-	let sliders = document.querySelectorAll(".slider"); 
-	let red = sliders[0].value;
-	let green = sliders[1].value; 
-	let blue = sliders[2].value;
-
-	// Achtergrondkleur van de kleurdemo instellen met de RGB-waarden
-	let color = `rgb(${red}, ${green}, ${blue})`;
-	document.querySelector(".colorDemo").style.backgroundColor = color;
+	let sliders = document.getElementsByClassName("slider");
+	let colorDemo=document.getElementsByClassName("colorDemo");
+	let text = document.getElementsByClassName("text");
+	
 
 	
-	document.getElementById("getal").textContent = red;
-	document.getElementById("getal1").textContent = green;
-	document.getElementById("getal2").textContent = blue;
+	let value= sliders[0].value;
+	let value1=sliders[1].value;
+	let value2=sliders[2].value;
+	
+	
+   
+	colorDemo[0].style.backgroundColor= "rgb("+value+","+value1+","+value2+")";
+	
+
 }
 
 

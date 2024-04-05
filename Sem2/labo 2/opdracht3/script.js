@@ -1,7 +1,7 @@
 const setup = () => {
     // deze code wordt pas uitgevoerd als de pagina volledig is ingeladen
-    let pElement=document.getElementById("txtOutput");
-    pElement.innerHTML="Welkom!";
+    let txtOutput = document.getElementById("txtOutput");
+    txtOutput.innerHTML = "neen";
 }
 
 window.addEventListener("load", setup);
