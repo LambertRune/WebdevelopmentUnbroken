@@ -84,12 +84,7 @@ const checkIfWon = () => {
         }
     }
     if (gewonnen) {
-        let gameOver = document.createElement("p");
-        let gameOverText = document.createTextNode("YOU WIN");
-        gameOver.appendChild(gameOverText);
-        gameOver.setAttribute("id", "gameOver");
-        let body = document.querySelector("body");
-        body.appendChild(gameOver);
+       window.alert("gewonnen");
     }
 }
 
