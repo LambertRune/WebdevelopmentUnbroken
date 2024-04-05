@@ -51,18 +51,14 @@ const clickedTarget = (event) => {
         pElement.appendChild(scoreText);
     } else {
         if (!global.gameEnded) {
+
             endGame();
         }
     }
 }
 
 const endGame = () => {
-    let gameOver = document.createElement("p");
-    let gameOverText = document.createTextNode("GAME OVER");
-    gameOver.appendChild(gameOverText);
-    gameOver.setAttribute("id", "gameOver");
-    let field = document.querySelector("#playField");
-    field.appendChild(gameOver);
+    window.alert("je score is "+ global.score);
     clearTimeout(global.timer);
     global.gameEnded = true;
 }
